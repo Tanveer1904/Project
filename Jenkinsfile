@@ -16,7 +16,8 @@ pipeline
       {
         sh 'docker build -f vote/Dockerfile -t Tanveer1904/votingapp vote/.'
         sh 'docker build -f result/Dockerfile -t Tanveer1904/resultapp result/.'
-	sh 'docker build -f worker/Dockerfile -t Tanveer1904/workerapp worker/.'      }
+	sh 'docker build -f worker/Dockerfile -t Tanveer1904/workerapp worker/.'      
+      }
     }
     stage('Push')
     {
